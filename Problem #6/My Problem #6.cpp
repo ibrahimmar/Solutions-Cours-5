@@ -11,22 +11,27 @@ int ReadPositiveNumber(string Message)
         cout << Message << endl;
         cin >> Number;
     } while (Number < 0);
-    return Number;    
+    return Number;
 }
 
-void PrintDigits(int Number)
+void PrintTotalDigits(int Number)
 {
-    int Remainder = 0;
+    int Sum = 0, Remainder = 0;
+
     while (Number > 0)
     {
         Remainder = Number % 10;
         Number = Number / 10;
-        cout << Remainder << endl;
+        Sum += Remainder; 
     }
-    
+    cout << "\n\n Sum Digits = "<< Sum << endl << endl;
 }
 
 int main()
 {
-    PrintDigits(ReadPositiveNumber("Please enter a Positive Number? "));
+
+
+    PrintTotalDigits(ReadPositiveNumber("Please enter a Positive Number? "));
+
+    return 0;
 }
