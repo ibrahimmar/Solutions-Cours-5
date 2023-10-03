@@ -12,7 +12,7 @@ string ReadPassword()
 }
 bool GuessPassword(string OriginalPassword)
 {
-    string Word = " ";
+    string Word = "";
     int Counter = 0;
     for (int i = 65; i <= 90; i++)
     {
@@ -40,7 +40,7 @@ bool GuessPassword(string OriginalPassword)
                   return true;
                 }
                 
-                Word = " ";
+                Word = "";
             }
         }
     }

@@ -16,7 +16,7 @@ bool PrintWordsFromAAAToZZZ(string Number)
     int counter = 0;
     cout << "\n";
 
-    string Word = " ";
+    string Word = "";
 
     for (int i = 65; i <= 90; i++)
     {
